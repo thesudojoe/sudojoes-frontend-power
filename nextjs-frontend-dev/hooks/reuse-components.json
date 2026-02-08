@@ -1,0 +1,12 @@
+{
+  "name": "Reuse Existing Components",
+  "version": "1.0.0",
+  "description": "Before creating new UI components, check the components/ directory for existing ones that can be reused or extended",
+  "when": {
+    "type": "promptSubmit"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "If the user is asking you to build UI or create components, before writing any new component code, scan the components/ and components/ui/ directories to see what already exists. Reuse existing components wherever possible instead of creating duplicates. If an existing component is close but not quite right, extend or compose it rather than building from scratch. Do this silently — don't explain that you're checking unless the user asks."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Suggest Component Tests",
+  "version": "1.0.0",
+  "description": "Manually trigger to get Playwright E2E test suggestions for your components",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Scan the components/ directory and the app/ directory for components and pages that don't have corresponding Playwright E2E tests in the e2e/ directory. Suggest which ones would benefit most from test coverage, prioritizing components with user interactions (forms, buttons, modals, navigation). Offer to generate the test files."
+  }
+}

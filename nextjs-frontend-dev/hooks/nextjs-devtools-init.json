@@ -1,0 +1,12 @@
+{
+  "name": "Next.js DevTools Init",
+  "version": "1.0.0",
+  "description": "Automatically initializes Next.js DevTools MCP context at the start of every session",
+  "when": {
+    "type": "promptSubmit"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "If the next-devtools MCP server is available and the init tool has not been called yet in this session, call the init tool from the next-devtools MCP server to initialize Next.js DevTools context. Do this silently without explaining it to the user."
+  }
+}
